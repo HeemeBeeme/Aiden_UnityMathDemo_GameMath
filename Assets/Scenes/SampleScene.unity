@@ -128,15 +128,30 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 328723428}
-  - component: {fileID: 328723427}
+  - component: {fileID: 328723429}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: ChestScriptObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &328723427
+--- !u!4 &328723428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328723426}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &328723429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,11 +163,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a127a93009849046895eaf348445967, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WoodChest: 500
-  BronzeChest: 300
-  SilverChest: 150
-  GoldChest: 50
-  PlatinumChest: 1
+  ChestTypeInt: 0
+  ChestLootInt: 0
+  WoodChestChance: 500
+  BronzeChestChance: 300
+  SilverChestChance: 150
+  GoldChestChance: 50
+  PlatinumChestChance: 1
   WoodCommon: 500
   WoodUncommon: 300
   WoodRare: 150
@@ -178,21 +195,6 @@ MonoBehaviour:
   PlatinumRare: 450
   PlatinumEpic: 300
   PlatinumLegendary: 10
---- !u!4 &328723428
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 328723426}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
